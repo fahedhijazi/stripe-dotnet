@@ -45,8 +45,14 @@ namespace Stripe
         [JsonProperty("currency")]
         public string Currency { get; set; }
 
+        [JsonProperty("destination_payment_refund")]
+        public string DestinationPaymentRefundId { get; set; }
+
         [JsonProperty("metadata")]
         public Dictionary<string, string> Metadata { get; set; }
+
+        [JsonProperty("source_refund")]
+        public string SourceRefundId { get; set; }
 
         #region Expandable Transfer
         [JsonIgnore]
