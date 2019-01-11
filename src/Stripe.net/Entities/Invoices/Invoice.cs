@@ -219,6 +219,9 @@ namespace Stripe
         [JsonProperty("tax_percent")]
         public decimal? TaxPercent { get; set; }
 
+        [JsonProperty("transfer_data")]
+        public InvoiceTransferData TransferData { get; set; }
+
         [JsonProperty("total")]
         public long Total { get; set; }
 

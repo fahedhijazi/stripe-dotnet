@@ -84,5 +84,8 @@ namespace Stripe
         [Obsolete("Use Items")]
         [JsonProperty("quantity")]
         public long? Quantity { get; set; }
+
+        [JsonProperty("transfer_data")]
+        public SubscriptionTransferDataOptions TransferData { get; set; }
     }
 }

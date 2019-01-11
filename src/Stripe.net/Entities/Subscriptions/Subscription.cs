@@ -127,6 +127,9 @@ namespace Stripe
         [JsonProperty("tax_percent")]
         public decimal? TaxPercent { get; set; }
 
+        [JsonProperty("transfer_data")]
+        public SubscriptionTransferData TransferData { get; set; }
+
         [JsonProperty("trial_end")]
         [JsonConverter(typeof(DateTimeConverter))]
         public DateTime? TrialEnd { get; set; }
